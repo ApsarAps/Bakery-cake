@@ -8,6 +8,11 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  build: {
+    rollupOptions: {
+      external: ["/src/assets/images/instagram_icon.png.webp"],
+    },
+  },
   css: {
     preprocessorOptions: {
       css: {

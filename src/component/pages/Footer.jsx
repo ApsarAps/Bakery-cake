@@ -1,9 +1,10 @@
 import logo from "/src/assets/images/Bakereies_Logo-removebg-preview.png";
 import fbIcon from "/src/assets/images/images (3).png";
 import twitterIcon from "/src/assets/images/2496110.png";
-import instagramIcon from "/src/assets/images/instagram_icon.png.webp";
 import whatsapp from "/src/assets/images/2496112.png";
 import youtubeIcon from "/src/assets/images/youtube.webp";
+import InstagramIcon from "../../assets/images/instagram_icon.png.webp";
+
 
 export const Footer = () => {
   return (
@@ -37,7 +38,7 @@ export const Footer = () => {
         <div>
           <h3 className="font-bold underline">WE ARE SOCIAL</h3>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
-            {[whatsapp, instagramIcon, fbIcon, youtubeIcon, twitterIcon].map((icon, index) => (
+            {[whatsapp,InstagramIcon, fbIcon, youtubeIcon, twitterIcon].map((icon, index) => (
               <img 
                 key={index} 
                 src={icon} 
