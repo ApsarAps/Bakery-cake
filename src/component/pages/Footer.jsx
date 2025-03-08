@@ -3,7 +3,7 @@ import fbIcon from "/src/assets/images/images (3).png";
 import twitterIcon from "/src/assets/images/2496110.png";
 import whatsapp from "/src/assets/images/2496112.png";
 import youtubeIcon from "/src/assets/images/youtube.webp";
-import InstagramIcon from "../../assets/images/instagram_icon.png.webp";
+import InstagramIcon from "../../assets/images/Instagram_icon.webp";
 
 
 export const Footer = () => {
