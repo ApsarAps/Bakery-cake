@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ThemeCakesSlider from "./ThemeCakesSlider";
 import CakeCards from "./CakeCards"; 
 import expressTheme from "/src/assets/images/kit_kat_cake.jpg";
 import birthdayTheme from "/src/assets/images/Birthday_cakes.jpg";
@@ -6,6 +7,14 @@ import weddingTheme from "/src/assets/images/wedding.jpeg";
 import heartTheme from "/src/assets/images/21.jpeg";
 import girlsTheme from "/src/assets/images/19.jpeg";
 import boysTheme from "/src/assets/images/23.jpeg";
+import TierTheme from "/src/assets/images/32.jpeg";
+import ShapeTheme from "/src/assets/images/9444cc0c-8a77-4438-ae5e-d85c37f9388b.jpeg";
+import DrawingTheme from "/src/assets/images/f006-_3_to_5_1.jpg";
+import BabyShowerTheme from "/src/assets/images/Fun and Delicious Cakes for Your Pregnancy Reveal.jpeg";
+import PinataTheme from "/src/assets/images/38.jpeg";
+import AlphabeticTheme from "/src/assets/images/Alphabet Cake.jpeg";
+import NumericTheme from "/src/assets/images/Snow white theme cake.jpeg";
+import PhotoTheme from "/src/assets/images/Doraemon Fam Cartoon Cake _ JS yummy_.jpeg";
 import { FaSearch } from "react-icons/fa";
 import expressCake1 from "/src/assets/images/chocolate-truffle-cake-845926.jpg";
 import expressCake2 from "/src/assets/images/blasty_blueberry_1_5.jpg";
@@ -59,11 +68,73 @@ import heartcake5 from "/src/assets/images/Vintage Cake Toppers_ Add Charm and C
 import heartcake6 from "/src/assets/images/Pink Heart Cake.jpeg";
 import heartcake7 from "/src/assets/images/21.jpeg";
 import heartcake8 from "/src/assets/images/Heart Shape Anniversary Cakes Ideas __ New Valentine's Day cakes _ wedding cakes ideas.jpeg";
+import Tiercake1 from "/src/assets/images/Hanging fake cake, faux wedding cake, 5 tiered white faux cake, 12 inch cake.jpeg";
+import Tiercake2 from "/src/assets/images/Two tier Rainbow cake with chocolate drip and rainbow topper!.jpeg";
+import Tiercake3 from "/src/assets/images/TWO TIER CAKE - two layer (30 PEOPLE).jpeg";
+import Tiercake4 from "/src/assets/images/Italian-Inspired White And Greenery Sarasota Wedding - Marry Me Tampa Bay _ Most Trusted Wedding Vendor Search And Real Wedding Inspiration Site.jpeg";
+import Tiercake5 from "/src/assets/images/7.jpeg";
+import Tiercake6 from "/src/assets/images/TWO TIER CAKE - two layer (30 PEOPLE).jpeg";
+import Tiercake7 from "/src/assets/images/Porsche Cake.jpeg";
+import Tiercake8 from "/src/assets/images/26 Fun Cakes for an Awesome 20th Birthday.jpeg";
+import Shapecake1 from "/src/assets/images/Bear Cake.jpeg";
+import Shapecake2 from "/src/assets/images/8792e2d7-d2cb-4d7f-af24-f4a7633b5cf1.jpeg";
+import Shapecake3 from "/src/assets/images/Piped soccer ball shaped birthday cake.jpeg";
+import Shapecake4 from "/src/assets/images/Flying Kite Bars.jpeg";
+import Shapecake5 from "/src/assets/images/google images.jpeg";
+import Shapecake6 from "/src/assets/images/09f584ef-eecd-4924-a7a6-e8462c94eff7.jpeg";
+import Shapecake7 from "/src/assets/images/Book.jpeg";
+import Shapecake8 from "/src/assets/images/Two the moon theme cake semi circle, dome shape moon cake _.jpeg";
+import Drawingcake1 from "/src/assets/images/9390b676-5c0c-463d-a7a6-8554ba36d4d9.jpeg";
+import Drawingcake2 from "/src/assets/images/292c3958-b536-4892-8fda-f09aacdec871.jpeg";
+import Drawingcake3 from "/src/assets/images/CH633-350x350.jpg";
+import Drawingcake4 from "/src/assets/images/hello kitty filter glasses.jpeg";
+import Drawingcake5 from "/src/assets/images/mikey.jpeg";
+import Drawingcake6 from "/src/assets/images/25fbedfaa463b4423e78f0afd5eca1d7.jpg";
+import Drawingcake7 from "/src/assets/images/651ff1c0-6f95-4d83-9c8c-444d7a6d8c1b.jpeg";
+import Drawingcake8 from "/src/assets/images/ec3a86a1-0a3d-4c83-a9e0-28aa91a42a2b.jpeg";
+import BabyShowercake1 from "/src/assets/images/39.jpeg";
+import BabyShowercake2 from "/src/assets/images/34.jpeg";
+import BabyShowercake3 from "/src/assets/images/22.jpeg";
+import BabyShowercake4 from "/src/assets/images/Mini torta temática de embarazo.jpeg";
+import BabyShowercake5 from "/src/assets/images/Prince or Princess_ Baby Shower 400113.jpeg";
+import BabyShowercake6 from "/src/assets/images/fea3ae2d-a560-4811-8ea4-5cf37aab4e22.jpeg";
+import BabyShowercake7 from "/src/assets/images/25+ Inspirações Bolo Chá Revelação.jpeg";
+import BabyShowercake8 from "/src/assets/images/28.jpeg";
+import Pinatacake1 from "/src/assets/images/53371105-0d35-4f4a-9c46-08353711cb85.jpeg";
+import Pinatacake2 from "/src/assets/images/e89e912c-cfdf-4cd4-a230-bee5f7396dd7.jpeg";
+import Pinatacake3 from "/src/assets/images/Cricket Pinata Cakes- CakeSmash_in.jpeg";
+import Pinatacake4 from "/src/assets/images/Chocolate Smash Cakes (Piñata Cakes) - Cake Pops by Gabi.jpeg";
+import Pinatacake5 from "/src/assets/images/Pinata Cake with Hammer - Frozen theme.jpeg";
+import Pinatacake6 from "/src/assets/images/Boom! Bomb 💣 cake.jpeg";
+import Pinatacake7 from "/src/assets/images/Unicorn Pinyata.jpeg";
+import Pinatacake8 from "/src/assets/images/853d1b45-7735-4e84-be99-2a8dee91309d.jpeg";
+import Alphabetcake1 from "/src/assets/images/Letter A Cake.jpeg";
+import Alphabetcake2 from "/src/assets/images/How To Make Alphabet Cake At Home - Wondafox.jpeg";
+import Alphabetcake3 from "/src/assets/images/Custom Initial Birthday CakeChocolate Cake Decorated with Fruit and Macarons.jpeg";
+import Alphabetcake4 from "/src/assets/images/Monogram cake.jpeg";
+import Alphabetcake5 from "/src/assets/images/Letter cake.jpeg";
+import Alphabetcake6 from "/src/assets/images/fdd4d62e-b627-423a-8b5e-f938a6aec5d2.jpeg";
+import Alphabetcake7 from "/src/assets/images/a775ae9a-01d6-4d79-a53c-3bea347a4664.jpeg";
+import Alphabetcake8 from "/src/assets/images/964faaf1-0ce8-4e1d-92ad-da955d7e30f1.jpeg";
+import Numericcake1 from "/src/assets/images/b4530edf-67d4-471f-999d-8219db916d14.jpeg";
+import Numericcake2 from "/src/assets/images/eeb24ca6-cec6-4345-bb53-894fa92d5888.jpeg";
+import Numericcake3 from "/src/assets/images/6.jpeg";
+import Numericcake4 from "/src/assets/images/Number cake.jpeg";
+import Numericcake5 from "/src/assets/images/Nutella Number Cake - Emma's Lieblingsstücke.jpeg";
+import Numericcake6 from "/src/assets/images/Backtrends 2020_2021.jpeg";
+import Numericcake7 from "/src/assets/images/Nutella Number Cake - Emma's Lieblingsstücke.jpeg";
+import Numericcake8 from "/src/assets/images/bf8a6403-8471-4d1b-aa9e-e8faee10c59f.jpeg";
+import Photocake1 from "/src/assets/images/Birthday Cake With Photo Red Velvet Cake.jpeg";
+import Photocake2 from "/src/assets/images/Order Ben 10 Kids Photo Cake - onlinecake_in.jpeg";
+import Photocake3 from "/src/assets/images/16.jpeg";
+import Photocake4 from "/src/assets/images/Captain America Photo Cake _ Marvel Character Cake _ Pure Veg Bakery.jpeg";
 import logo1 from"/src/assets/images/6021967-removebg-preview.png"
 import logo2 from"/src/assets/images/silver-star-five-points-design_88791-59.avif"
 import logo3 from"/src/assets/images/pngtree-vector-gold-star-with-circle-png-image_13064659-removebg-preview.png"
 import breadPastriesImage from "/src/assets/images/breads-pastries-christmas-cake-wooden-background-heart-picture-bakery-shop-valentines-day-65833657.webp";
 import { EnquiryForm } from "./pages/EnquiryForm";
+
+
 
 
 const themes = [
@@ -73,6 +144,14 @@ const themes = [
   { name: "Heart", image: heartTheme },
   { name: "Girl's", image: girlsTheme },
   { name: "Boy's", image: boysTheme },
+  { name: "Tier/Step", image:TierTheme },
+    { name: "Shape", image: ShapeTheme },
+    { name: "Drawing", image: DrawingTheme },
+    { name: "Baby Shower", image: BabyShowerTheme },
+    { name: "Pinata", image: PinataTheme },
+    { name: "Alphabet", image:AlphabeticTheme },
+    { name: "Numeric", image: NumericTheme },
+    { name: "Photo", image:PhotoTheme },
 ];
 
 const cakeData = {
@@ -150,6 +229,400 @@ const cakeData = {
       { id: 52, name: "Football Theme Cake", weight: "1 kg", price: 2640, image: boysCake8 },
     
     ],
+  "Tier/Step": [
+      { id: 53, name: "Hanging Cake", weight: "2 kg", price: 3690, image: Tiercake1 },
+      { id: 54, name: "Two Tier Rainbow Cake", weight: "1 kg",price: 3540, image: Tiercake2 },
+      { id: 55, name: "Choco Layer Cake", weight: "1 kg", price: 3540, image: Tiercake3 },
+      { id: 56, name: "White & Greenary Cake", weight: "1 kg", price: 2620, image: Tiercake4 },
+      { id: 57, name: "5-tier Classy Light-up Cake", weight: "1 kg", price: 2640, image: Tiercake5 },
+      { id: 58, name: "5-tier Delicious Choco Cake", weight: "1 kg", price: 2640, image: Tiercake6 },
+      { id: 59, name: "2-tier Classy Porsche Cake", weight: "1 kg", price: 2640, image: Tiercake7 },
+      { id: 60, name: "Sea Animals Theme Cake", weight: "1 kg", price: 2640, image:Tiercake8},
+    ],
+    Shape:[
+  {
+    id: 61,
+    name: "Teddy Bear Cake",
+    weight: "1 Kg",
+    price: "2690.00",
+    image: Shapecake1, 
+  },
+  {
+    id: 62,
+    name: "Kitty Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Shapecake2, 
+  },
+  {
+    id: 63,
+    name: "Soccer Ball Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Shapecake3, 
+  },
+  {
+    id: 64,
+    name: "Flying Kite Bars Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: Shapecake4, 
+  },
+  {
+    id: 65,
+    name: "Dog Shaped Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Shapecake5, 
+  },
+  {
+    id: 66,
+    name: "Ice Cream Shape Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Shapecake6, 
+  },
+  {
+    id: 67,
+    name: "Book Shaped Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Shapecake7, 
+  },
+  {
+    id: 68,
+    name: "Two the Moon Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Shapecake8,
+  },
+],
+ Drawing:[
+  {
+    id: 69,
+    name: "Angry Bird Cake",
+    weight: "1 Kg",
+    price: "1690.00",
+    image: Drawingcake1,
+  },
+  {
+    id: 70,
+    name: "Doremon Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Drawingcake2, 
+  },
+  {
+    id: 71,
+    name: "Chotta Beem Cake",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: Drawingcake3, 
+  },
+  {
+    id: 72,
+    name: "Hello Kitty Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: Drawingcake4, 
+  },
+  {
+    id: 73,
+    name: "Micky Mouse Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Drawingcake5, 
+  },
+  {
+    id: 74,
+    name: "Dora Theme Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Drawingcake6, 
+  },
+  {
+    id: 75,
+    name: "Tom & Jerry Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Drawingcake7, 
+  },
+  {
+    id: 76,
+    name: "Incredible Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Drawingcake8, 
+  },
+],
+ "Baby Shower":[
+  {
+    id: 77,
+    name: "Gender Reveal Cake",
+    weight: "1 Kg",
+    price: "2690.00",
+    image: BabyShowercake1, 
+  },
+  {
+    id: 78,
+    name: "Pink & Blue Theme Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: BabyShowercake2, 
+  },
+  {
+    id: 79,
+    name: "Boy Reveal Cake",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: BabyShowercake3, 
+  },
+  {
+    id: 80,
+    name: "Baby Shower Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: BabyShowercake4, 
+  },
+  {
+    id: 81,
+    name: "Gender Reveal Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: BabyShowercake5, 
+  },
+  {
+    id: 82,
+    name: "Baby Shower Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: BabyShowercake6, 
+  },
+  {
+    id: 83,
+    name: "Baby Shower Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: BabyShowercake7, 
+  },
+  {
+    id: 84,
+    name: "Baby Shower Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: BabyShowercake8, 
+  },
+],
+ Pinata:[
+  {
+    id: 85,
+    name: "Pinata Cake",
+    weight: "1 Kg",
+    price: "2690.00",
+    image: Pinatacake1, 
+  },
+  {
+    id: 86,
+    name: "Ball Pinata Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Pinatacake2, 
+  },
+  {
+    id: 87,
+    name: "Cricket Pinata Cakes",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: Pinatacake3, 
+  },
+  {
+    id: 88,
+    name: "Chocolate Smash Pinata Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: Pinatacake4, 
+  },
+  {
+    id: 89,
+    name: "Frozen Pinata Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Pinatacake5, 
+  },
+  {
+    id: 90,
+    name: "Bomb Pinata Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Pinatacake6, 
+  },
+  {
+    id: 91,
+    name: "Unicorn Pinata Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Pinatacake7, 
+  },
+  {
+    id: 92,
+    name: "Bomb Pinata Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Pinatacake8, 
+  },
+],
+Alphabet: [
+  {
+    id: 93,
+    name: "Pink Blush Cake",
+    weight: "1 Kg",
+    price: "2690.00",
+    image: Alphabetcake1, 
+  },
+  {
+    id: 94,
+    name: "Macroon Infused",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Alphabetcake2, 
+  },
+  {
+    id: 95,
+    name: "Chocolate Overload",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: Alphabetcake3, 
+  },
+  {
+    id: 96,
+    name: "M Alphabet Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: Alphabetcake4, 
+  },
+  {
+    id: 97,
+    name: "Panda Theme Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Alphabetcake5, 
+  },
+  {
+    id: 98,
+    name: "T Letter Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Alphabetcake6, 
+  },
+  {
+    id: 99,
+    name: "Ferrero Rocher",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Alphabetcake7, 
+  },
+  {
+    id: 100,
+    name: "Death by Chocolate",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Alphabetcake8, 
+  },
+],
+Numeric: [
+  {
+    id: 101,
+    name: "Pink Blush Cake",
+    weight: "1 Kg",
+    price: "2690.00",
+    image: Numericcake1, 
+  },
+  {
+    id: 102,
+    name: "Macroon Infused",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Numericcake2, 
+  },
+  {
+    id: 103,
+    name: "Chocolate Overload",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: Numericcake3, 
+  },
+  {
+    id: 104,
+    name: "11 Numeric Cake",
+    weight: "1 Kg",
+    price: "2620.00",
+    image: Numericcake4, 
+  },
+  {
+    id: 105,
+    name: "Game Theme Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Numericcake5, 
+  },
+  {
+    id: 106,
+    name: "7 Number Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Numericcake6, 
+  },
+  {
+    id: 107,
+    name: "Nutella Number Cake",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Numericcake7, 
+  },
+  {
+    id: 108,
+    name: "Death by Chocolate",
+    weight: "1 Kg",
+    price: "2640.00",
+    image: Numericcake8, 
+  },
+],
+Photo:[
+  {
+    id: 109,
+    name: "Photo Theme Cake",
+    weight: "2 Kg",
+    price: "3500.00",
+    image: Photocake1, 
+  },
+  {
+    id: 110,
+    name: "Ben 10 Photo Cake",
+    weight: "1 Kg",
+    price: "3540.00",
+    image: Photocake2, 
+  },
+  {
+    id: 111,
+    name: "Shinchan Photo Cake",
+    weight: "1 Kg",
+    price: "1540.00",
+    image: Photocake3, 
+  },
+  {
+    id: 112,
+    name: "Captain America Photo Cake",
+    weight: "1 Kg",
+    price: "₹2620.00",
+    image: Photocake4, 
+  },
+],
+
+
+
+
+
+
   
   };
 export const ThemeCakes = () => {
@@ -242,25 +715,8 @@ export const ThemeCakes = () => {
 
 <h1 className="text-3xl text-[#5D4037] text-center my-8 font-bold underline">THEME CAKES</h1>
 
-<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-center">
-  {themes.map((theme) => (
-    <div
-      key={theme.name}
-      onClick={() => setSelectedCategory(theme.name)}
-      className="cursor-pointer transform transition-transform duration-300 hover:scale-110 text-center"
-    >
-      <img
-        src={theme.image}
-        alt={theme.name}
-        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg mx-auto"
-      />
-      <p className="font-semibold mt-1">{theme.name}</p>
-    </div>
-  ))}
-</div>
-
+<ThemeCakesSlider themes={themes} setSelectedCategory={setSelectedCategory} />
 <h2 className="text-3xl text-[#5D4037] text-center font-bold underline mt-6">{selectedCategory} Cakes</h2>
-
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
   {cakeData[selectedCategory]?.length > 0 ? (
     cakeData[selectedCategory].map((cake) => <CakeCards key={cake.id} cake={cake} />)
