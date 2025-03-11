@@ -80,7 +80,7 @@ import Shapecake1 from "/src/assets/images/Bear Cake.jpeg";
 import Shapecake2 from "/src/assets/images/8792e2d7-d2cb-4d7f-af24-f4a7633b5cf1.jpeg";
 import Shapecake3 from "/src/assets/images/Piped soccer ball shaped birthday cake.jpeg";
 import Shapecake4 from "/src/assets/images/Flying Kite Bars.jpeg";
-import Shapecake5 from "/src/assets/images/google images.jpeg";
+import Shapecake5 from "/src/assets/images/Google-Images.jpeg";
 import Shapecake6 from "/src/assets/images/09f584ef-eecd-4924-a7a6-e8462c94eff7.jpeg";
 import Shapecake7 from "/src/assets/images/Book.jpeg";
 import Shapecake8 from "/src/assets/images/Two the moon theme cake semi circle, dome shape moon cake _.jpeg";
