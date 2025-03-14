@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const PastryCard = ({ pastry }) => {
   const [quantity, setQuantity] = useState(1);
+  const navigate = useNavigate();
 
   return (
     <div className="p-4 rounded-lg transform transition-all duration-500 hover:scale-105 overflow-hidden relative">
@@ -38,7 +41,10 @@ const PastryCard = ({ pastry }) => {
         </div>
 
         <p className="text-xl font-bold mt-2">₹{pastry.price}.00</p>
-        <button className="mt-2  cursor-pointer transition-all duration-400 ease-in-out hover:bg-[#F8BBD0] hover:text-[#5D4037] px-4 font-bold bg-[#5D4037] text-[#F8BBD0] py-2 rounded-md">
+        <button className="mt-2  cursor-pointer transition-all duration-400 ease-in-out hover:bg-[#F8BBD0] hover:text-[#5D4037] px-4 font-bold bg-[#5D4037] text-[#F8BBD0] py-2 rounded-md"
+         onClick={() => navigate(`/pastry/${pastry.id}`, { state: { pastry } })}
+        
+        >
           ADD TO CART
         </button>
       </div>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ThemeCakesSlider from "./ThemeCakesSlider";
 import CakeCards from "./CakeCards"; 
+import { EnquiryForm } from "./pages/EnquiryForm";
+import { FaSearch } from "react-icons/fa";
 import expressTheme from "/src/assets/images/kit_kat_cake.jpg";
 import birthdayTheme from "/src/assets/images/Birthday_cakes.jpg";
 import weddingTheme from "/src/assets/images/wedding.jpeg";
@@ -15,7 +17,6 @@ import PinataTheme from "/src/assets/images/38.jpeg";
 import AlphabeticTheme from "/src/assets/images/Alphabet Cake.jpeg";
 import NumericTheme from "/src/assets/images/Snow white theme cake.jpeg";
 import PhotoTheme from "/src/assets/images/Doraemon Fam Cartoon Cake _ JS yummy_.jpeg";
-import { FaSearch } from "react-icons/fa";
 import expressCake1 from "/src/assets/images/chocolate-truffle-cake-845926.jpg";
 import expressCake2 from "/src/assets/images/blasty_blueberry_1_5.jpg";
 import expressCake3 from "/src/assets/images/blackforest.jpg";
@@ -132,7 +133,6 @@ import logo1 from"/src/assets/images/6021967-removebg-preview.png"
 import logo2 from"/src/assets/images/silver-star-five-points-design_88791-59.avif"
 import logo3 from"/src/assets/images/pngtree-vector-gold-star-with-circle-png-image_13064659-removebg-preview.png"
 import breadPastriesImage from "/src/assets/images/breads-pastries-christmas-cake-wooden-background-heart-picture-bakery-shop-valentines-day-65833657.webp";
-import { EnquiryForm } from "./pages/EnquiryForm";
 
 
 

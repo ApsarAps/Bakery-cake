@@ -1,4 +1,5 @@
 import React from 'react' 
+import PastryCard from './PastryCard';
 import caramelHazelnut from "/src/assets/images/Caramel Hazelnut Iced Coffee [10 Minutes].jpeg";
 import hotChocolate from "/src/assets/images/HotChocolate05_400x400.webp";
 import strawberryMilkShake from "/src/assets/images/Strawberry Milkshake Delight_ A Must-Try Treat for Strawberry Dessert Lovers!.jpeg";
@@ -11,7 +12,6 @@ import caffeMochaMagic from "/src/assets/images/Caffe Mocha Magic for Chocolate 
 import ketoMatchaGreenTea from "/src/assets/images/Delicious Keto Matcha Green Tea Whipped Cream Iced Latte Recipe for Weight Loss.jpeg";
 import classicMangoShake from "/src/assets/images/10.webp";
 import bobaBubbleTea from "/src/assets/images/Purple Boba Tea_ Flavor, Ingredients & Recipe!.jpeg";
-import PastryCard from './PastryCard';
 import { EnquiryForm } from './pages/EnquiryForm';
 import { SearchBar } from './pages/SearchBar';
 

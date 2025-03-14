@@ -1,6 +1,5 @@
 import React from "react";
 import PastryCard from "./PastryCard";
-
 import redVelvet from "/src/assets/images/Rich-Red velvet.webp";
 import chocoTruffle from "/src/assets/images/5.jpeg";
 import blackforest from "/src/assets/images/Blackforest Pastry And Dessert.jpeg";

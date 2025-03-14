@@ -10,6 +10,11 @@ import { Reachout } from "./component/Reachout";
 import { ThemeCakes } from "./component/ThemeCakes";
 import { Footer } from "./component/pages/Footer";
 import { Navbar } from "./component/pages/Navbar";
+import PastryDetails from "./component/PastryDetails";
+import Checkout from "./component/Checkout";
+import CakeDetails from "./component/CakeDetails"; 
+import CheckoutCake from "./component/CheckoutCake";
+
 
 
 
@@ -29,6 +34,11 @@ function App() {
       <Route path="/our-identity" element={<OurIdentity />}/>
       <Route path="/reach-out" element={<Reachout />}/>
       <Route path="/themed" element={<ThemeCakes />}/>
+      <Route path="/pastry/:id" element={<PastryDetails />} />
+      <Route path="/cakedetails" element={<CakeDetails />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/checkout-cake" element={<CheckoutCake />} />
+
 
     </Routes>
     
