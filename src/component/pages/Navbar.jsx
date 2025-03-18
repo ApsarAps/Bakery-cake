@@ -10,12 +10,21 @@ const menuVariants = {
   exit: { opacity: 0, y: -10, transition: { duration: 0.3 } },
 };
 
+const menuItems = [
+  { name: "HOME", path: "/" },
+  { name: "THEMED", path: "/themed" },
+  { name: "PASTRIES", path: "/pastries" },
+  { name: "BREAD-DESSERTS", path: "/bread-desserts" }, 
+  { name: "BEVERAGES", path: "/beverages" },
+  { name: "OUR IDENTITY", path: "/our-identity" },
+  { name: "REACH OUT", path: "/reach-out" },
+];
+
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="bg-[#5D4037] text-white p-3 flex justify-between items-center relative">
-      
       <Link to="/" onClick={() => setIsMenuOpen(false)}>
         <motion.img
           src={logo}
@@ -28,9 +37,9 @@ export const Navbar = () => {
       </Link>
 
       <ul className="hidden md:flex text-xl font-bold gap-14">
-        {["HOME", "THEMED", "PASTRIES", "BREAD/DESSERTS", "BEVERAGES", "OUR IDENTITY", "REACH OUT"].map((item, index) => (
+        {menuItems.map(({ name, path }, index) => (
           <motion.li key={index} whileHover={{ scale: 1.1, color: "#F8BBD0" }}>
-            <Link to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}>{item}</Link>
+            <Link to={path}>{name}</Link>
           </motion.li>
         ))}
       </ul>
@@ -52,17 +61,16 @@ export const Navbar = () => {
             exit="exit"
             variants={menuVariants}
           >
-            {["HOME", "THEMED", "PASTRIES", "BREAD-DESSERTS", "BEVERAGES", "OUR IDENTITY", "REACH OUT"].map((item, index) => (
-  <Link
-    key={index}
-    to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-    className="hover:text-[#F8BBD0]"
-    onClick={() => setIsMenuOpen(false)}
-  >
-    {item}
-  </Link>
-))}
-
+            {menuItems.map(({ name, path }, index) => (
+              <Link
+                key={index}
+                to={path}
+                className="hover:text-[#F8BBD0]"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {name}
+              </Link>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>

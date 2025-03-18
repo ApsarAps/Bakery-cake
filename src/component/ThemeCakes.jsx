@@ -659,14 +659,14 @@ export const ThemeCakes = () => {
         {showDiscounts && (
   <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
     <div
-      className="relative w-full max-w-[95%] sm:max-w-[700px] bg-no-repeat bg-center bg-cover rounded-xl text-center shadow-2xl transform transition-all duration-500 ease-out scale-100 p-4 sm:p-6 md:p-8 overflow-auto max-h-[90vh]"
+      className="relative w-full max-w-[95%] sm:max-w-[700px] bg-no-repeat bg-center bg-cover rounded-xl text-center shadow-2xl transform transition-all duration-500 ease-out scale-100 p-4 sm:p-6 md:p-8 
+      sm:max-h-none sm:overflow-visible max-h-[90vh] overflow-auto"
       style={{
         backgroundImage: `url(${breadPastriesImage})`,
       }}
     >
       <div className="absolute inset-0 bg-[#F8BBD0] opacity-60 rounded-xl"></div>
       <div className="relative z-10">
-        {/* Header Section */}
         <div className="bg-[#5D4037] text-white rounded-xl p-3 mb-4">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <img src="" alt="logo" className="w-12 h-12 sm:w-16 sm:h-16" />
@@ -680,7 +680,6 @@ export const ThemeCakes = () => {
           <h2 className="text-xs sm:text-sm font-bold mt-2">1 Point = 1 Rupee</h2>
         </div>
 
-        {/* Rewards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="bg-[#5D4037] p-4 text-white rounded-xl flex flex-col items-center">
             <img src={logo1} alt="Welcome Gift" className="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
@@ -703,12 +702,10 @@ export const ThemeCakes = () => {
           </div>
         </div>
 
-        {/* Additional Reward */}
         <div className="mt-4 bg-[#5D4037] text-white p-3 rounded-xl font-semibold text-center text-xs sm:text-sm">
           GET 10 Points (whenever you submit a feedback)
         </div>
 
-        {/* Close Button */}
         <button className="mt-4 text-black font-bold underline text-sm sm:text-lg" onClick={() => setShowDiscounts(false)}>
           Close
         </button>
@@ -716,6 +713,7 @@ export const ThemeCakes = () => {
     </div>
   </div>
 )}
+
 
 
 <h1 className="text-3xl text-[#5D4037] text-center my-8 font-bold underline">THEME CAKES</h1>
