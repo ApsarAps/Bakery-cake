@@ -82,23 +82,24 @@ navigate("/checkout-cake", {
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-bold text-xl mb-2">Weight:</h3>
-            <div className="flex gap-4">
-              {["1.0kg", "2.0kg", "3.0kg", "4.0kg", "5.0kg"].map((item) => (
-                <button
-                key={item}
-                onClick={() => setWeight(item)}
-                className={`px-4 py-2 rounded-lg text-lg font-bold ${
-                  weight === item
-                    ? "bg-[#F8BBD0] text-[#5D4037]"
-                    : "bg-[#5D4037] text-[#F8BBD0]"
-                }`}
-              >
-                {item}
-              </button>
-              ))}
-            </div>
-          </div>
+  <h3 className="font-bold text-lg sm:text-xl mb-2">Weight:</h3>
+  <div className="grid grid-cols-2 sm:flex gap-2 sm:gap-4">
+    {["1.0kg", "2.0kg", "3.0kg", "4.0kg", "5.0kg"].map((item) => (
+      <button
+        key={item}
+        onClick={() => setWeight(item)}
+        className={`px-6 py-3 rounded-lg text-base sm:text-lg font-bold w-full sm:w-auto text-center ${
+          weight === item
+            ? "bg-[#F8BBD0] text-[#5D4037]"
+            : "bg-[#5D4037] text-[#F8BBD0]"
+        }`}
+      >
+        {item}
+      </button>
+    ))}
+  </div>
+</div>
+
 
           <div className="space-y-2">
             <h3 className="font-bold text-xl mb-2">Flavour:</h3>

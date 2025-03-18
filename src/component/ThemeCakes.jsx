@@ -657,61 +657,66 @@ export const ThemeCakes = () => {
         </div>
 
         {showDiscounts && (
-          <div className="fixed inset-0 flex items-center  justify-center z-50 p-4">
-            <div
-              className="relative w-full max-w-[700px]  bg-no-repeat bg-center bg-cover rounded-xl text-center shadow-2xl transform transition-all duration-500 ease-out scale-100 p-4 sm:p-6 md:p-8"
-              style={{
-                backgroundImage: `url(${breadPastriesImage})`,
-              }}
-            >
-              <div className="absolute  inset-0 bg-[#F8BBD0] opacity-60 rounded-xl"></div>
-              <div className="relative z-10">
-                <div className="bg-[#5D4037] text-white rounded-xl p-3 mb-4">
-                  <div className="flex flex-col  sm:flex-row items-center justify-between gap-4">
-                    <img src="" alt="logo" className="w-12 h-12 sm:w-16 sm:h-16" />
-                    <h2 className="text-white font-bold text-lg sm:text-lg text-center">
-                      GET 100 ADDITIONAL POINTS ON YOUR FIRST ONLINE ORDER.
-                    </h2>
-                  </div>
-                  <p className="text-md sm:text-md font-semibold mt-2">
-                    Now earn Points on every order and use them on your next one.
-                  </p>
-                  <h2 className="text-md sm:text-md font-bold mt-2">1 Point = 1 Rupee</h2>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-                  <div className="bg-[#5D4037] sm:p-2 text-white p-4 rounded-xl flex flex-col items-center">
-                    <img src={logo1} alt="Welcome Gift" className="w-14 h-14 sm:w-16 sm:h-16 mb-2" />
-                    <p className="font-bold text-lg underline">Welcome Gift</p>
-                    <p className="text-sm sm:text-base text-center">Get 100 Points on your first order</p>
-                  </div>
-
-                  <div className="bg-[#5D4037] text-white  p-4 rounded-xl flex flex-col items-center">
-                    <img src={logo2} alt="Vanilla" className="w-14 h-14 sm:w-16 sm:h-16 rounded-full mb-2" />
-                    <p className="font-bold text-lg underline">Vanilla</p>
-                    <p className="text-sm sm:text-base text-center">Get Points worth 10% of your order amount</p>
-                    <p className="text-sm sm:text-base text-center">Applicable for <strong>1st to 8th order</strong></p>
-                  </div>
-
-                  <div className="bg-[#5D4037] text-white p-4 rounded-xl flex flex-col items-center">
-                    <img src={logo3} alt="Saffron" className="w-14 h-14 sm:w-16 sm:h-16 mb-2" />
-                    <p className="font-bold text-lg underline">Saffron</p>
-                    <p className="text-sm sm:text-base text-center">Get Points worth <strong>20%</strong> of your order</p>
-                    <p className="text-sm sm:text-base text-center">Applicable for <strong>9th order and onwards</strong></p>
-                  </div>
-                </div>
-
-                <div className="mt-4 bg-[#5D4037] text-white p-3 rounded-xl font-semibold text-center">
-                  GET 10 Points (whenever you submit a feedback)
-                </div>
-
-                <button className="mt-4 text-black font-bold underline text-lg" onClick={() => setShowDiscounts(false)}>
-                  Close
-                </button>
-              </div>
-            </div>
+  <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
+    <div
+      className="relative w-full max-w-[95%] sm:max-w-[700px] bg-no-repeat bg-center bg-cover rounded-xl text-center shadow-2xl transform transition-all duration-500 ease-out scale-100 p-4 sm:p-6 md:p-8 overflow-auto max-h-[90vh]"
+      style={{
+        backgroundImage: `url(${breadPastriesImage})`,
+      }}
+    >
+      <div className="absolute inset-0 bg-[#F8BBD0] opacity-60 rounded-xl"></div>
+      <div className="relative z-10">
+        {/* Header Section */}
+        <div className="bg-[#5D4037] text-white rounded-xl p-3 mb-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <img src="" alt="logo" className="w-12 h-12 sm:w-16 sm:h-16" />
+            <h2 className="text-white font-bold text-sm sm:text-lg text-center">
+              GET 100 ADDITIONAL POINTS ON YOUR FIRST ONLINE ORDER.
+            </h2>
           </div>
-        )}
+          <p className="text-xs sm:text-sm font-semibold mt-2">
+            Now earn Points on every order and use them on your next one.
+          </p>
+          <h2 className="text-xs sm:text-sm font-bold mt-2">1 Point = 1 Rupee</h2>
+        </div>
+
+        {/* Rewards Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="bg-[#5D4037] p-4 text-white rounded-xl flex flex-col items-center">
+            <img src={logo1} alt="Welcome Gift" className="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+            <p className="font-bold text-sm sm:text-base underline">Welcome Gift</p>
+            <p className="text-xs sm:text-sm text-center">Get 100 Points on your first order</p>
+          </div>
+
+          <div className="bg-[#5D4037] p-4 text-white rounded-xl flex flex-col items-center">
+            <img src={logo2} alt="Vanilla" className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-2" />
+            <p className="font-bold text-sm sm:text-base underline">Vanilla</p>
+            <p className="text-xs sm:text-sm text-center">Get Points worth 10% of your order amount</p>
+            <p className="text-xs sm:text-sm text-center">Applicable for <strong>1st to 8th order</strong></p>
+          </div>
+
+          <div className="bg-[#5D4037] p-4 text-white rounded-xl flex flex-col items-center">
+            <img src={logo3} alt="Saffron" className="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+            <p className="font-bold text-sm sm:text-base underline">Saffron</p>
+            <p className="text-xs sm:text-sm text-center">Get Points worth <strong>20%</strong> of your order</p>
+            <p className="text-xs sm:text-sm text-center">Applicable for <strong>9th order and onwards</strong></p>
+          </div>
+        </div>
+
+        {/* Additional Reward */}
+        <div className="mt-4 bg-[#5D4037] text-white p-3 rounded-xl font-semibold text-center text-xs sm:text-sm">
+          GET 10 Points (whenever you submit a feedback)
+        </div>
+
+        {/* Close Button */}
+        <button className="mt-4 text-black font-bold underline text-sm sm:text-lg" onClick={() => setShowDiscounts(false)}>
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
 
 <h1 className="text-3xl text-[#5D4037] text-center my-8 font-bold underline">THEME CAKES</h1>
 
